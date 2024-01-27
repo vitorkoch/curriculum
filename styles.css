@@ -43,7 +43,7 @@ body {
 }
 
 #scroll-progress {
-  position: sticky;
+  position: fixed;
   top: 0;
   height: 4px;
   background-color: var(--accent-color);
