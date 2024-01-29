@@ -41,6 +41,21 @@ body {
   font-family: Lexend, sans-serif;
 }
 
+.shaking {
+  display: inline-block;
+  animation: shaking 1s ease infinite alternate;
+}
+
+@keyframes shaking {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(45deg);
+  }
+}
+
 #scroll-progress {
   position: fixed;
   top: 0;
@@ -110,10 +125,16 @@ h6 {
   text-align: center;
   width: fit-content;
   margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  position: relative;
 }
 
 h2::after,
-h3::after {
+h3::after,
+h4::after {
   content: "";
   display: block;
   width: 33%;
@@ -122,6 +143,9 @@ h3::after {
   transition: width 300ms ease;
   opacity: .4;
   border-radius: 9999px;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
 }
 
 h2:hover::after,
