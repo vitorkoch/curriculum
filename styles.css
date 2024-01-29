@@ -197,6 +197,10 @@ section.stacks li:hover {
   transform: scale(1.1);
 }
 
+section.capabilities {
+  margin: 24px;
+}
+
 section.capabilities ul {
   list-style: none;
   display: flex;
